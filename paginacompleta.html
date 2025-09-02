@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #0f0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #0e0101;
+            background-color: rgba(255,255,255,0.1);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .link-btn:hover {
+            background-color: #fff;
+            color: #341e72;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu de Páginas</h1>
+    <div class="menu">
+        <a id="link1" class="link-btn">Contato</a>
+        <a id="link2" class="link-btn">Minha Trajetória</a>
+        <a id="link3" class="link-btn">Projeto</a>
+        <a id="link4" class="link-btn">Kívia</a>
+    </div>
+
+    <script>
+        // Links reais do seu computador
+        const links = {
+            link1: "http://127.0.0.1:5500/contato.html",
+            link2: "http://127.0.0.1:5500/minhatragetoria.html",
+            link3: "http://127.0.0.1:5500/linkdeproj.html",
+            link4: "http://127.0.0.1:5500/kivia.html"
+        };
+
+        for (const id in links) {
+            document.getElementById(id).addEventListener("click", function() {
+                window.location.href = links[id];
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,255,255,0.5);
+            width: 350px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: aqua;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="text"], input[type="email"] {
+            height: 35px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: aqua;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00cccc;
+        }
+
+        .contatos {
+            background: #1e1e1e;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,255,255,0.5);
+            width: 350px;
+            text-align: center;
+        }
+
+        .contatos h3 {
+            color: aqua;
+            margin-bottom: 10px;
+        }
+
+        .contatos p {
+            margin: 6px 0;
+            color: #ddd;
+        }
+
+        .contatos a {
+            color: aqua;
+            text-decoration: none;
+        }
+
+        .contatos a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="contatos">
+        <h3>Meus Dados de Contato</h3>
+        <p>Email: <a href="mailto:kiviaellen2015@gmail.com">kiviaellen2018@gmail.com</a></p>
+        <p>Telefone: <a href="https://wa.me/5531980116140" target="_blank">+55 (31) 98011-6140</a></p>
+        <p>GitHub: <a href="https://github.com/kiviak2222" target="_blank">kiviak2222</a></p>
+    </div>
+
+</body>
+</html>
